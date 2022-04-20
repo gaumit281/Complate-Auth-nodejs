@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    {{>navbar}}
+
+
+
+    <form class="container" action="/signup" method="POST">
+
+        {{#if signuperror}}
+            <div class="alert alert-danger" role="alert">
+                {{signuperror}}
+            </div>
+        {{/if}}
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="" aria-describedby="emailHelp"
+                placeholder="Enter Name" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Mobile</label>
+            <input type="number" class="form-control" id="phone" name="phone" value="" aria-describedby="emailHelp"
+                placeholder="Enter Mobile No" required>
+
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" value="" aria-describedby="emailHelp"
+                placeholder="Enter email" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Address</label>
+            <textarea class="form-control" id="address" name="address" value="" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" value=""
+                placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn btn-success" name="submit">Submit</button>
+    </form>
+</body>
+
+</html>

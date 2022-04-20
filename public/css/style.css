@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item img{
+    height: 92.5vh;
+    width: 100%;
+}
+
+/* about styel */
+
+
+
+/* services style */
+
+.container{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+.card{
+    padding-bottom: 2rem;
+}
+
+.card img{
+    height: 30vh;
+}
